@@ -4,8 +4,6 @@ from mesa.time import RandomActivation
 from mesa.space import MultiGrid
 from mesa.datacollection import DataCollector
 
-
-
 def compute_gini(model):
     agent_wealths = [agent.wealth for agent in model.schedule.agents]
     x = sorted(agent_wealths)
@@ -70,5 +68,4 @@ class MoneyModel(Model):
         self.schedule.step()
 
     
-
 
