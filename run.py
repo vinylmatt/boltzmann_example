@@ -9,7 +9,7 @@ agent_wealth = []
 
 for j in range(100):
     # Run the model
-    model = MoneyModel(50, 10, 10)
+    model = MoneyModel(100, 50, 50)
     # test this works ok by doing
     # model = MoneyModel(4, 100, 100) and looking at chartby run wover a range of 1
     # if it's working, it's often 1
@@ -33,10 +33,9 @@ plt1.imshow(agent_counts, interpolation='nearest')
 plt1.colorbar()
 plthist.colorbar()
 
-
-
-
+# %%
 # %%
 
-
-
+gini = model.datacollector.get_model_vars_dataframe()
+gini.plot()
+# %%
