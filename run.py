@@ -18,8 +18,6 @@ for j in range(10):
 clean
 plt.hist(agent_wealth, bins=range(max(agent_wealth)+1))
 # %%
-# %%
 
-# %%
 
 
