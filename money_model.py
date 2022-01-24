@@ -4,6 +4,8 @@ from mesa.time import RandomActivation
 from mesa.space import MultiGrid
 from mesa.datacollection import DataCollector
 
+
+
 def compute_gini(model):
     agent_wealths = [agent.wealth for agent in model.schedule.agents]
     x = sorted(agent_wealths)
@@ -16,9 +18,8 @@ class MoneyAgent(Agent):
     def __init__(self, unique_id, model):
         super().__init__(unique_id, model)
         self.wealth = 1
-        
         #debug
-        print ("Hi, I am agent " + str(self.unique_id) +". My wealth is " + str(self.wealth) +".")       
+        #print ("Hi, I am agent " + str(self.unique_id) +". My wealth is " + str(self.wealth) +".")       
           
     def move(self):
         possible_steps = self.model.grid.get_neighborhood(
@@ -49,6 +50,7 @@ class MoneyModel(Model):
         self.num_agents = N
         self.grid = MultiGrid(width, height, True)
         self.schedule = RandomActivation(self)
+        self.running = True
         # Create agents
         for i in range(self.num_agents):
             a = MoneyAgent(i, self)
