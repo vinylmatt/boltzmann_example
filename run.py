@@ -15,7 +15,7 @@ agent_wealth = []
 
 for j in range(100):
     # Run the model
-    model = MoneyModel(3, 3, 3)
+    model = MoneyModel(50, 10, 10)
     # test this works ok by doing
     # model = MoneyModel(4, 100, 100) and looking at chartby run over a range of 1
     # if it's working, it's often 1
@@ -47,7 +47,7 @@ gini.plot()
 
 # %%
 agent_wealth = model.datacollector.get_agent_vars_dataframe()
-agent_wealth.head(100)
+agent_wealth.head()
 # %%
 
 end_wealth = agent_wealth.xs(99, level="Step")["Wealth"]
@@ -56,6 +56,5 @@ end_wealth.hist(bins=range(agent_wealth.Wealth.max() + 1))
 # %%
 one_agent_wealth = agent_wealth.xs(2, level="AgentID")
 one_agent_wealth.Wealth.plot()
-# %%
 
 # %%

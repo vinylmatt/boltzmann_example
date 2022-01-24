@@ -37,7 +37,7 @@ class MoneyAgent(Agent):
             other_agent.wealth += 1
             self.wealth -= 1
             #debug
-            print ("agent " + str(self.unique_id) +". gave to " + str(other_agent.unique_id) +". wealth is " + str(self.wealth) +".")       
+            #print ("agent " + str(self.unique_id) +". gave to " + str(other_agent.unique_id) +". wealth is " + str(self.wealth) +".")       
 
     def step(self):
         self.move()
