@@ -57,8 +57,7 @@ mesa runserver additional_material
 
 ## More Additional Material
 
-While exploring the topic before the project specification was released I had a look the
-'Modelling for All' tool referenced in the . This is run on the Windows PC using NetLogo or in the browser. This had a drag and drop interface and it was possible to do an impolmentation of the 2 predator - prey model with an aversion to the proximity of shepherds, using the same technique in the Schelling model.
+I had a look the 'Modelling for All' tool referenced in the [Agent Based Modelling and Simulation tools: A review of the state-of-art software](https://www.sciencedirect.com/science/article/pii/S1574013716301198?casa_token=5xh_M0rry5QAAAAA:fXmpKnrKsLdHA5R7YPbAEMnMxnZt_2Y6iOmNLvVuRO8B67dZmjOkXfaglbkoL9WudfoSqEmEaA). This can be run on the Windows PC using NetLogo or in the browser. This had a drag and drop interface and it was possible to do an impolmentation of the 2 predator - prey model with an aversion to the proximity of shepherds, using the same technique in the Schelling model.
 
 ## Modelling for all Training Material
 
