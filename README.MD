@@ -23,27 +23,23 @@ python3 batch.py
 
 ```
 
-## For Windows Visualisation
+## Windows Charts
 
-So far, if everything worked ok, we can see basic console output summarising multiple runs of agents and models. Don't worry if it's hard to intertpret, the charts can be generated in VS Code on Windows as by adding the [Jupyter](https://jupyter.org/) extension and clicking on Run Above in either run.py or  batchrunner.py.
+So far, if everything worked ok, we can see basic console output summarising multiple runs of agents and models. Don't worry if it's hard to intertpret, the charts can be generated in VS Code on Windows as by adding the [Jupyter](https://jupyter.org/) extension and clicking on Run Above in either run.py or batch.py.
 
-![Run Charts](https://github.com/vinylmatt/boltzmann_example/blob/master/RunCharts.gif?raw=true)
-
-to see the Batch Run Charts
 
 ![Run Charts](https://github.com/vinylmatt/boltzmann_example/blob/master/RunCharts.gif?raw=true)
+
+## Batches
+
+Batches are very useful for running sets of tests and varying  parameters. See the comments in the code for more information to see the Batch Run Charts
+
+![Run Charts](https://github.com/vinylmatt/boltzmann_example/blob/master/RunChartsBatch1.gif?raw=true)
 
 ## Experience
 The [Introductory Tutorial](https://mesa.readthedocs.io/en/master/tutorials/intro_tutorial.html) is well paced, introducing major topics in a way that requires that the student contextualise with the previous steps - enhancing understanding. 
 
 At the same time, the steps give ways of developing insight into the model; when there is only a time dimention it was difficult to believe it was working, but when space is introduced into the model, it becomes possible to make small populations and big grids.
-
-
-
-## Future Improvements
-Add chart labels
-Advanced tutorial for javascript implemention of visualisation
-Experiment with toroidal grid
 
 ## Additional Material
 
@@ -60,16 +56,24 @@ mesa runserver additional_material
 ## More Additional Material
 
 While exploring the topic before the project specification was released I had a look the
-Modelling for All tool referenced in the . This is run on the Windows PC using NetLogo or in the browser. This had a drag and drop interface and it was possible to do an impolmentation of the 2 predator - prey model with an aversion to the proximity of shepherds, using the same technique in the Schelling model.
+'Modelling for All' tool referenced in the . This is run on the Windows PC using NetLogo or in the browser. This had a drag and drop interface and it was possible to do an impolmentation of the 2 predator - prey model with an aversion to the proximity of shepherds, using the same technique in the Schelling model.
+
+## Modelling for all Training Material
 
 A [tutorial](https://www.youtube.com/watch?v=HALiXCTaoMk&t=2s&ab_channel=KenKahn) on the platform from the tool author offered a blank slate implementation of Thomas Schelling’s Segregation Model, comparable in approach to that of MESA.
 
-Version 1 WE5000 with 2 simple predators (no avoidance)
+## Extending the model with an extra predator
+
+Version 1 with 2 simple predators (no avoidance)
 http://m.modelling4all.org/m/?frozen=-swtA0uulUxYgny1cIP57c&MforAllModel=1
 
-Version 2 WE5000 with 2 simple predator and smart wolf
+## Smarter Intermediate Predator
+
+Version 2 with 1 simple predator and 1 smart wolf
 http://m.modelling4all.org/m/?frozen=bKHpqKSuhhWfNuitI14548&MforAllModel=1
 
 Either of the above models can be run in the browser or downloaded to the and run with a local copy of NetLogo on the PC.
 
-Testing setup from observation 22 runs on In this testing environment, avoidant wolf populations endured 10% longer on average. Further observation is required to assess this strategy’s effectiveness, and the batch run feature of MESA would have been useful here to develop more confidence in the model's function.
+## Thoughts
+
+Testing setup from observation 22 runs in this environment, avoidant wolf populations endured 10% longer on average. Further observation is required to assess this strategy’s effectiveness, and the batch run feature of MESA would have been useful here to develop more confidence in the model's function. One standout feature of this tool was how easy it was to build complexity in the modelling language and how easy the models are to share.
