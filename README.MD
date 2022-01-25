@@ -57,7 +57,9 @@ mesa runserver additional_material
 
 ## More Additional Material
 
-I had a look the 'Modelling for All' tool referenced in the [Agent Based Modelling and Simulation tools: A review of the state-of-art software](https://www.sciencedirect.com/science/article/pii/S1574013716301198?casa_token=5xh_M0rry5QAAAAA:fXmpKnrKsLdHA5R7YPbAEMnMxnZt_2Y6iOmNLvVuRO8B67dZmjOkXfaglbkoL9WudfoSqEmEaA). This can be run on the Windows PC using NetLogo or in the browser. This had a drag and drop interface and it was possible to do an impolmentation of the 2 predator - prey model with an aversion to the proximity of shepherds, using the same technique in the Schelling model.
+Also reviewed was 'Modelling for All' a tool referenced in [Agent Based Modelling and Simulation tools: A review of the state-of-art software](https://www.sciencedirect.com/science/article/pii/S1574013716301198?casa_token=5xh_M0rry5QAAAAA:fXmpKnrKsLdHA5R7YPbAEMnMxnZt_2Y6iOmNLvVuRO8B67dZmjOkXfaglbkoL9WudfoSqEmEaA) by O'Hare et al. 
+
+This can be run on the Windows PC using NetLogo or in the browser. This had a drag and drop interface and it was possible to do an impolmentation of the 2 predator - prey model with an aversion to the proximity of shepherds, using the same technique in the Schelling model.
 
 ## Modelling for all Training Material
 
@@ -77,4 +79,4 @@ Either of the above models can be run in the browser or downloaded to the and ru
 
 ## Thoughts
 
-Testing setup from observation 22 runs in this environment, avoidant wolf populations endured 10% longer on average. Further observation is required to assess this strategy’s effectiveness, and the batch run feature of MESA would have been useful here to develop more confidence in the model's function. One standout feature of this tool was how easy it was to build complexity in the modelling language and how easy the models are to share.
+Testing setup from observation 22 runs in this environment, avoidant wolf populations endured 10% longer on average. Further observation is required to assess this strategy’s effectiveness, and the batch run feature of MESA would have been useful here to develop more confidence in the model's function. The standout feature of this tool was how easy it was to build complexity in the GUI and how easy the models are to share.
