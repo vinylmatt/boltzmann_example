@@ -1,13 +1,11 @@
 # MESA - Getting Started with Boltzmann 
 
-This is an implementation of the [Introductory Tutorial](https://mesa.readthedocs.io/en/master/tutorials/intro_tutorial.html) at the Mesa website. The tutorial implements the simple and powerful Boltzmann model, while demonstratings the major features of the Mesa and showcases the models counter intutitive distruibitive outcomes. Finally we implement the BatchRunner which allows insights to be developed though varying the staring paramenters and comparing aggregated metrics. 
-
-## Prerequistes 
+This is an implementation of the [Introductory Tutorial](https://mesa.readthedocs.io/en/master/tutorials/intro_tutorial.html) at the Mesa website. The tutorial implements the simple and powerful Boltzmann model, while demonstrating the major features of the Mesa and showcases the model's counter intuitive distributive outcomes. We implement the BatchRunner which allows insight to be developed though varying the starting parameters and comparing aggregated metrics. 
 
 ## Installation
-This installation routine, and the display of the charts, was tested on a Windows machine running VS Code connecting over SSH to a LAMP stack Linux box. If you find an error bug or have a question [please let me know](mailto:matt.mcgee@ucdconnect.ie).
+This installation routine, and the display of the charts, was tested on a Windows machine running VS Code connecting over SSH to a linux machine. If you have a difficultly with a different configuration or have a question [please let me know](mailto:matt.mcgee@ucdconnect.ie).
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Mesa.
+We use the package manager [pip](https://pip.pypa.io/en/stable/) to install Mesa.
 
 ```bash
 sudo apt install python3
@@ -15,54 +13,40 @@ sudo apt install python3-pip
 sudo apt install python-numpy
 pip install mesa
 # install dependencies
-pip install -r https://raw.githubusercontent.com/projectmesa/mesa/master/examples/boltzmann_wealth_model/requirements.txt
-
-pip install -r jupyter
-pip install -r  matplotlib
-pip install -r  install mesa
-pip install -r  install numpy
+pip install -r https://raw.githubusercontent.com/vinylmatt/boltzmann_example/master/requirements.txt
 sudo snap install gh
+# Open this folder in terminal
 cd /your/path/boltzmann_example
+# Check everything is working by running the batch runner. This takes a while.
+python3 batch.py
+
 
 ```
 
 ## For Windows Visualisation
 
-The path must be added
+So far, if everything worked ok, we can see basic console output summarising multiple runs of agents and models. Don't worry if it's hard to intertpret, the charts can be generated in VS Code on Windows as by adding the [Jupyter](https://jupyter.org/) extension and clicking on Run Above in either run.py or  batchrunner.py.
 
-```python
-export PATH=/home/matt/.local/bin:$PATH
 
-# returns 'words'
-foobar.pluralize('word')
+//gif console output
 
-# returns 'geese'
-foobar.pluralize('goose')
+## Experience
+The [Introductory Tutorial](https://mesa.readthedocs.io/en/master/tutorials/intro_tutorial.html) is well paced, introducing major topics in a way that requires that the student contextualise with the previous steps - enhancing understanding. 
 
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
+At the same time, the steps give ways of developing insight into the model; when there is only a time dimention it was difficult to believe it was working, but when space is introduced into the model, it becomes possible to make small populations and big grids.
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+//We instantiate a grid with width and height parameters, and a boolean as to whether the grid is toroidal. < - Try changing this parameter
 
-Please make sure to update tests as appropriate.
+## Future Improvements
+Add chart labels
+Advanced tutorial for javascript implemention of visualisation  
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+## Additional Material
+
+The MESA examples also included many oven ready scripts, the project folder also contains an implementation of one of these, the //wolf sheep, where an extra layer of extra layer of predation where an onmivorous shepherd can prey on wolves, sheep and eat grass. This is a more advanced application from the presentation point of view, and was fun to play with, the better presentation layer makes the model more usable (and fun to play with) - I focussed on trying to get populations of the 3 different mammals to last as many ticks as possible. 
 
 
 
 
-```python
-export PATH=/home/matt/.local/bin:$PATH
 
-# returns 'words'
-foobar.pluralize('word')
 
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```

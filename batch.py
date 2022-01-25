@@ -16,12 +16,12 @@ def compute_gini(model):
 fixed_params = {"width": 10,
                "height": 10}
 variable_params = {"N": range(10, 500, 10)}
-#variable_params = {"N": range(10, 500, 10)}
-#The total number of runs is 245. 
-# That is 10 agents to 490 increasing by 10, 
-# making 49 agents populations. 
+# using variable_params = {"N": range(10, 500, 10)}
+# the total number of runs is 245. 
+# That is starting with 10 agents and increasing to 490 
+# in increments of 10 making 49 agents populations. 
 # Each agent population is then run 5 times 
-# (n of agent * 5) for 245 iterations
+# (49 * 5) makes 245 iterations
 
 #Faster
 #variable_params = {"N": range(10, 100, 10)}
@@ -36,6 +36,7 @@ batch_run = BatchRunner(MoneyModel,
                         fixed_params,
                         # Each agent population is  run 5 times
                         iterations=5,
+                        # 100 steps per model
                         max_steps=100,
                         model_reporters={"Gini": compute_gini})
 
@@ -52,7 +53,7 @@ plt.scatter(run_data.N, run_data.Gini)
 data_collector_agents = batch_run.get_collector_agents()
 values = data_collector_agents.values()
 print(values)
-
+# %%
 #Get the Model DataCollection.
 
 data_collector_model = batch_run.get_collector_model()
