@@ -1,8 +1,10 @@
-# Foobar
+# MESA - GETTING STARTED WITH BOLZMANN 
 
-Foobar is a Python library for dealing with word pluralization.
+This is an implementation of the [Introductory Tutorial](https://mesa.readthedocs.io/en/master/tutorials/intro_tutorial.html)
+
 
 ## Installation
+This installation routine was tested on a Windows machine running VS Code connecting over SSH to a LAMP stack Linux box. If you find an error bug or have a question [please let me know](mailto:mattmcgee@ucdconnect.ie).
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
