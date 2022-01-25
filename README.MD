@@ -3,7 +3,7 @@
 This is an implementation of the [Introductory Tutorial](https://mesa.readthedocs.io/en/master/tutorials/intro_tutorial.html) at the Mesa website. The tutorial implements the simple and powerful Boltzmann model, while demonstrating the major features of the Mesa and showcases the model's counterintuitive distributive outcomes. We implement the [Batch Run](https://mesa.readthedocs.io/en/master/tutorials/intro_tutorial.html#batch-run) which allows insight to be developed though varying the starting parameters and comparing aggregated metrics. 
 
 ## Installation
-This installation routine, and the display of the charts, was tested on a Windows machine running VS Code connecting over SSH to a linux machine. If you have a difficultly with a different configuration or have a question [please let me know](mailto:matt.mcgee@ucdconnect.ie).
+This installation routine, and the display of the charts, was tested on a Windows machine running VS Code connecting over SSH to a linux machine. Time allowing, testing on a fresh desktop install of Linux is desirable. If you have a difficultly getting this running [please let me know](mailto:matt.mcgee@ucdconnect.ie). Please include details of your environment.
 
 We use the package manager [pip](https://pip.pypa.io/en/stable/) to install Mesa.
 
@@ -42,6 +42,8 @@ The [Introductory Tutorial](https://mesa.readthedocs.io/en/master/tutorials/intr
 
 At the same time, the steps give ways of developing insight into the model; when there is only a time dimention it was difficult to believe it was working, but when space is introduced into the model, it becomes possible to make small populations and big grids.
 
+Being able to use VS code, which was familiar was very convienent and the code generated was terse and easy to understand. I found the batch runner hard to implement, but worthwhile. Using the jupyter cells was a little strange, but it worked well.
+
 ## Additional Material
 
 The MESA examples also included many oven-ready scripts, the project folder also contains an implementation of one of these, see the [example code on GitHub](https://github.com/projectmesa/mesa/tree/main/examples/wolf_sheep). In our implementation, we added an extra layer of predation where an onmivorous shepherd can prey on wolves, sheep and eat grass, depending on need. 
@@ -79,4 +81,4 @@ Either of the above models can be run in the browser or downloaded to the and ru
 
 ## Thoughts
 
-Testing setup from observation 22 runs in this environment, avoidant wolf populations endured 10% longer on average. Further observation is required to assess this strategy’s effectiveness, and the batch run feature of MESA would have been useful here to develop more confidence in the model's function. The standout feature of this tool was how easy it was to build complexity in the GUI and how easy the models are to share.
+Testing setup from observation 22 runs in this environment, avoidant wolf populations endured 10% longer on average. Further observation is required to assess this strategy’s effectiveness, and the batch run feature of MESA would have been useful here to develop more confidence in the model's function. The standout feature of this tool was how easy it was to build complexity in the GUI and how easy the models are to share. Unfortunatrly it was very slow and the actual code was verbose.
