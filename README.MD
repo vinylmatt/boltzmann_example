@@ -27,13 +27,18 @@ python3 batch.py
 
 So far, if everything worked ok, we can see basic console output summarising multiple runs of agents and models. Don't worry if it's hard to intertpret, the charts can be generated in VS Code on Windows as by adding the [Jupyter](https://jupyter.org/) extension and clicking on Run Above in either run.py or  batchrunner.py.
 
+![Run Charts](https://github.com/vinylmatt/boltzmann_example/blob/master/RunCharts.gif?raw=true)
 
-//gif console output
+to see the Batch Run Charts
+
+![Run Charts](https://github.com/vinylmatt/boltzmann_example/blob/master/RunCharts.gif?raw=true)
 
 ## Experience
 The [Introductory Tutorial](https://mesa.readthedocs.io/en/master/tutorials/intro_tutorial.html) is well paced, introducing major topics in a way that requires that the student contextualise with the previous steps - enhancing understanding. 
 
 At the same time, the steps give ways of developing insight into the model; when there is only a time dimention it was difficult to believe it was working, but when space is introduced into the model, it becomes possible to make small populations and big grids.
+
+
 
 ## Future Improvements
 Add chart labels
