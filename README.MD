@@ -35,17 +35,24 @@ The [Introductory Tutorial](https://mesa.readthedocs.io/en/master/tutorials/intr
 
 At the same time, the steps give ways of developing insight into the model; when there is only a time dimention it was difficult to believe it was working, but when space is introduced into the model, it becomes possible to make small populations and big grids.
 
-//We instantiate a grid with width and height parameters, and a boolean as to whether the grid is toroidal. < - Try changing this parameter
-
 ## Future Improvements
 Add chart labels
 Advanced tutorial for javascript implemention of visualisation  
+Experiment with toroidal grid
 
 ## Additional Material
 
-The MESA examples also included many oven ready scripts, the project folder also contains an implementation of one of these, the //wolf sheep, where an extra layer of extra layer of predation where an onmivorous shepherd can prey on wolves, sheep and eat grass. This is a more advanced application from the presentation point of view, and was fun to play with, the better presentation layer makes the model more usable (and fun to play with) - I focussed on trying to get populations of the 3 different mammals to last as many ticks as possible. 
+The MESA examples also included many oven ready scripts, the project folder also contains an implementation of one of these, see the [example code on GitHub](https://github.com/projectmesa/mesa/tree/main/examples/wolf_sheep). In our implementation, we added an extra layer of predation where an onmivorous shepherd can prey on wolves, sheep and eat grass, depending on need. 
+
+The sample code has a more advanced presentation layer, and was fun to play with, the better presentation layer made the model more usable (and fun to play with) - I focussed on trying to get the populations of the 3 different mammals to last as many 'ticks' as possible. It is easy to see, in hindside, where the Batch Runner in the Introductory Tutorial would have helped.
 
 
+```bash
+# Open the Predation Model
+mesa runserver additional_material
+
+
+```
 
 
 
