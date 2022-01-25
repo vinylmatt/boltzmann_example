@@ -7,6 +7,7 @@ This installation routine, and the display of the charts, was tested on a Window
 
 We use the package manager [pip](https://pip.pypa.io/en/stable/) to install Mesa.
 
+## Setup
 ```bash
 sudo apt install python3
 sudo apt install python3-pip
@@ -47,6 +48,7 @@ The MESA examples also included many oven-ready scripts, the project folder also
 
 The sample code has a more advanced presentation layer, and was fun to play with, the better presentation layer made the model more usable (and fun to play with) - I focussed on trying to get the populations of the 3 different mammals to last as many 'ticks' as possible. It is easy to see, in hindside, where the Batch Runner in the Introductory Tutorial would have helped.
 
+## Open the Additional Material
 ```bash
 # Open the Predation Model
 mesa runserver additional_material
